@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.static(__dirname));
 
 // REAL API KEYS (Get free ones)
-const OPENWEATHER_API_KEY = '2259d8f2effd2cb8f6b8d1f07014cfbf';  // Get from: https://openweathermap.org/api
+const OPENWEATHER_API_KEY = '';  // Get from: https://openweathermap.org/api
 const SOILGRIDS_USERNAME = 'soilgrids';
 const SOILGRIDS_PASSWORD = 'soilgrids';
 
@@ -256,4 +256,5 @@ app.listen(PORT, () => {
     console.log(`✅ Real AgriSmart running at http://localhost:${PORT}`);
     console.log(`✅ Using actual location detection and AI`);
     console.log(`✅ ML Crop Recommendation available at POST /api/recommend-crop`);
+
 });
